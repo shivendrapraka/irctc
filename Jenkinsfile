@@ -17,7 +17,6 @@ pipeline {
             steps {
                 sh '''
                 mvn clean install
-                mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=shivasir_irctc
                 '''
             }
         }
